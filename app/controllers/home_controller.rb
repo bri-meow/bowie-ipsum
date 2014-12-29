@@ -8,8 +8,8 @@ class HomeController < ApplicationController
     end
     @tagline = markov.generate_2_sentences
   end
-  
+
   def generate_ipsum
-    Ipsum.generate_ipsum
+    
   end
 end
