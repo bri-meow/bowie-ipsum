@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <img class="img-responsive" src="<%= asset_path( 'profile.png' ) %>" alt="">
+        <img class="img-responsive" src="<%= asset_path( 'bowiebot.png' ) %>" alt="">
         <div class="intro-text">
           <span class="name">BowieIpsum</span>
           <hr class="star-light">
@@ -24,12 +24,12 @@
     </div>
     <div class="row">
       <div class="col-sm-4 generate-ipsum-form">
-        Button to generate ipsum </br>
+        <%= button_to "Generate Ipsum", generate_ipsum_path %>
         Input field to add Bowie Song </br>
       </div>
       <div class="col-sm-8 generate-ipsum-item">
         <div class="ipsum-well">
-          Ipsum Appears Here
+          <%= @ipsum %>
         </div>
       </div>
     </div>
