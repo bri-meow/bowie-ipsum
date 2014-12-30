@@ -4,6 +4,11 @@ gem 'twitter'
 gem 'marky_markov'
 gem 'httparty'
 gem 'lyricfy'
+
+group :production do
+  gem 'rails_12_factor'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use postgresql as the database for Active Record
