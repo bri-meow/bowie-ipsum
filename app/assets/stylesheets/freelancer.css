@@ -17,7 +17,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #3cbdb8;
 }
 
 h1,
@@ -58,15 +58,15 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #3cbdb8;
 }
 
 hr.star-primary {
-    border-color: #2c3e50;
+    border-color: #47381e;
 }
 
 hr.star-primary:after {
-    color: #2c3e50;
+    color: #47381e;
     background-color: #fff;
 }
 
@@ -77,7 +77,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #47381e;
 }
 
 header .container {
@@ -120,7 +120,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 5px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -146,11 +146,9 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    background: #3cbdb8;
 }
 
-.navbar a:focus {
-    outline: 0;
-}
 
 .navbar .navbar-nav {
     letter-spacing: 1px;
@@ -158,11 +156,24 @@ header .intro-text .skills {
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
+    color: #47381e;
 }
 
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+.navbar .navbar-nav li a:hover {
+  color: #47381e;
+}
+
+.navbar .navbar-header a:hover {
+  color: #47381e;
+}
+
+.navbar .navbar-header a:focus {
+  color: #47381e;
 }
 
 section {
@@ -176,7 +187,7 @@ section h2 {
 
 section .success {
     color: #fff;
-    background: #18bc9c;
+    background: #3cbdb8;
 }
 
 @media(max-width:767px) {
@@ -260,7 +271,7 @@ section .success {
 .btn-outline:active,
 .btn-outline .active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #3cbdb8;
     background: #fff;
 }
 
@@ -313,7 +324,7 @@ section .success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #3cbdb8;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -330,7 +341,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2c3e50;
+    background-color: #47381e;
 }
 
 footer .footer-col {
@@ -339,7 +350,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: #47381e;
 }
 
 .btn-social {
