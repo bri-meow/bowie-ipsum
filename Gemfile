@@ -6,7 +6,12 @@ gem 'httparty'
 gem 'lyricfy'
 
 group :production do
-  gem 'rails_12_factor'
+  gem 'rails_12factor'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
