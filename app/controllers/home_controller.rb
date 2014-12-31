@@ -7,6 +7,7 @@ class HomeController < ApplicationController
       markov.parse_string(line)
     end
     @tagline = markov.generate_2_sentences
+    @song = Song.new()
   end
 
   def generate_ipsum
@@ -23,6 +24,7 @@ class HomeController < ApplicationController
     #return some ipsum
     @ipsum = markov.generate_4_sentences
     #go back to the index
+    @song = Song.new()
     render :index
   end
 end
