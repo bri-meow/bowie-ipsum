@@ -21,10 +21,11 @@ class HomeController < ApplicationController
         markov.parse_string(line)
       end
     end
+    @song = Song.new()
     #return some ipsum
     @ipsum = markov.generate_4_sentences
-    #go back to the index
-    @song = Song.new()
-    render :index
+    respond_to do |format|
+      format.js {}
+    end
   end
 end

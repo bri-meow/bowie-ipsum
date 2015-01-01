@@ -24,7 +24,7 @@
     </div>
     <div class="row">
       <div class="col-sm-4 generate-ipsum-form">
-        <%= button_to "Generate Ipsum", generate_ipsum_path, :class => "btn btn-default btn-md" %>
+        <%= button_to "Generate Ipsum", generate_ipsum_path, :class => "btn btn-default btn-md generate-ipsum-button" %>
         <%= form_for @song do |f| %>
           Title: <%= f.text_field :title %>
           <%= f.submit %>
