@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .ipsum-well {
-  border: 2px solid pink;
+  border: 2px solid grey;
+  border-radius: 1em;
   height: 300px;
+  padding: 10px;
+  background: lightgrey;
 }
