@@ -30,7 +30,7 @@
         </div>
         <div class="form-group">
           <%= form_for @song, html: {class: "form-inline"} do |f| %>
-            <%= f.label :title %>:
+            <%= f.label :title, class: "form-label" %>:
             <%= f.text_field :title, class: "form-control" %>
             <%= f.submit "Add Song", class: "form-control btn btn-default btn-md" %>
           <% end %>
@@ -76,15 +76,10 @@
     </div>
     <div class="row">
       <div class="col-lg-4 col-lg-offset-2">
-        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+        <p>Hi, I'm Bri. I have an affinity for David Bowie, twitterbots (really, robots of any kind!), and natural language processing. I used a markov chain generator to create this ipsum model (inspired by Garkov!).</p>
       </div>
       <div class="col-lg-4">
-        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-      </div>
-      <div class="col-lg-8 col-lg-offset-2 text-center">
-        <a href="#" class="btn btn-lg btn-outline">
-          <i class="fa fa-download"></i> Download Theme
-        </a>
+        <p>You can add any Bowie song you like to the dictionary, as long as my code can grab the lyrics, and this ipsum (and twitterbot), will learn. Look at a list of songs already in the dictionary here.</p>
       </div>
     </div>
   </div>
