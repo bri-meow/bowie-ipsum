@@ -5,7 +5,7 @@ class SongsController < ApplicationController
       Ipsum.fill_dictionary
       redirect_to root_path, notice: "Added #{@song.title} to BowieIpsum dictionary!"
     else
-      redirect_to root_path, notice: "There was a problem"
+      redirect_to root_path, notice: "Not a valid song"
     end
   end
 
