@@ -25,10 +25,13 @@
     </div>
     <div class="row">
       <div class="col-sm-4 generate-ipsum-form">
-        <div class="form-group">
-          <%= button_to "Generate Ipsum", generate_ipsum_path, class: "btn btn-default btn-md generate-ipsum-button" %>
+        <div class="ipsum-control">
+          <%= button_to "Generate Ipsum", generate_ipsum_path, form_class: "form-horizontal", class: "btn btn-success btn-md btn-block generate-ipsum-button" %>
+          <%= button_to "Remove Ipsum", "#",  form_class: "form-horizontal", class: "btn btn-danger btn-md btn-block remove-ipsum-button", role: "button" %>
         </div>
-        <div class="form-group">
+
+        <div class="add-song form-group">
+          <h3>Add a new song to the dictionary</h3>
           <%= form_for @song, html: {class: "form-inline"} do |f| %>
             <%= f.label :title, class: "form-label" %>:
             <%= f.text_field :title, class: "form-control" %>
