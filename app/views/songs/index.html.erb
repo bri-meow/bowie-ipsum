@@ -1,0 +1,22 @@
+<section class="success" id="songs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Bowie Ipsum's Songs</h2>
+        <hr class="star-light">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-2">
+        <% @songs_first.each do |song| %>
+          <p><%= song.title %></p>
+        <% end %>
+      </div>
+      <div class="col-lg-4">
+        <% @songs_last.each do |song| %>
+          <p><%= song.title %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
