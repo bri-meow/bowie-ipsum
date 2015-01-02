@@ -17,3 +17,23 @@
 .add-song h3{
   font-size: 15px;
 }
+
+.btn-success {
+  background-color: #83d6cd;
+  border-color: #83d6cd;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+  background-color: #2c887f;
+  border-color: #2c887f;
+}
+
+.btn-danger {
+  background-color: #6a5944;
+  border-color: #6a5944;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
+  background-color: #45331b;
+  border-color: #45331b;
+}

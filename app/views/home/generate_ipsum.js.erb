@@ -1,1 +1,1 @@
-$(".ipsum-well").append("<%= escape_javascript(@ipsum) %>");
+$(".ipsum-well").append("<%= escape_javascript(@ipsum.html_safe) %>");
