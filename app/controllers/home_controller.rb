@@ -6,11 +6,6 @@ class HomeController < ApplicationController
   end
 
   def generate_ipsum
-    @song = Song.new()
-    #return some ipsum
-    @ipsum = "<span>"+ $markov.generate_4_sentences + " </span>"
-    respond_to do |format|
-      format.js {}
-    end
+    render json: { text: $markov.generate_4_sentences }
   end
 end
