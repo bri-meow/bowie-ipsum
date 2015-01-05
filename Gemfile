@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'twitter'
 gem 'marky_markov'
-gem 'httparty'
 gem 'lyricfy'
+gem 'bootstrap-sass'
 
 group :production do
   gem 'rails_12factor'
