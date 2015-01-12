@@ -10,5 +10,4 @@ class Ipsum
       end
     end
   end
-
 end

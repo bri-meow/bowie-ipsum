@@ -16,9 +16,9 @@ $(function() {
 
   $(".remove-ipsum-button").click(function(event) {
     event.preventDefault();
-    var theIpsum = $(".ipsum-well")
-    var lastSpan = theIpsum.children().last()
-    lastSpan.remove()
+    var theIpsum = $(".ipsum-well");
+    var lastSpan = theIpsum.children().last();
+    lastSpan.remove();
   });
 
 });
