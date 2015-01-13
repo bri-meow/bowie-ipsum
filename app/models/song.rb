@@ -10,4 +10,8 @@ class Song < ActiveRecord::Base
       errors.add(:base, 'no lyrics!')
     end
   end
+
+  def self.all_alphabetized
+    Song.all.order(:title)
+  end
 end
