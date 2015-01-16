@@ -1,5 +1,6 @@
 class Song < ActiveRecord::Base
   validate :has_lyrics
+  validates_uniqueness_of :title
 
   def has_lyrics
     fetcher = Lyricfy::Fetcher.new
