@@ -8,7 +8,7 @@ class Song < ActiveRecord::Base
       fetcher.search("David Bowie", title)
       true
     rescue
-      errors.add(:base, 'no lyrics!')
+      errors.add(:base, 'no lyrics available!')
     end
   end
 
