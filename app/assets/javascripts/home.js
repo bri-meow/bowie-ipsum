@@ -5,7 +5,7 @@ $(function() {
     $.ajax($form.attr("action"), {
       type: "POST",
       success: function(res) {
-        $(".ipsum-well").append("<span>"+res["text"]+" <span>");
+        $(".ipsum-well").append("<span>"+res.text+" <span>");
 
       },
       error: function(jqXHR, textStatus, errorThrown) {
