@@ -21,4 +21,10 @@ $(function() {
     lastSpan.remove();
   });
 
+  $(".clear-ipsum-button").click(function(event) {
+    event.preventDefault();
+    var theIpsum = $(".ipsum-well");
+    theIpsum.children().remove();
+  });
+
 });
