@@ -17,7 +17,7 @@
 
 server '54.186.122.229',
   user: 'ubuntu',
-  roles: %w{web app},
+  roles: %w{web app db},
   ssh_options: {
     keys: %w(/Users/Brigid/.ssh/ec2-ada.pem),
     forward_agent: false,
