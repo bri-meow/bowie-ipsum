@@ -1,8 +1,11 @@
 # config valid only for current version of Capistrano
 lock '3.3.5'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'bowie'
+set :repo_url, 'git@github.com:brigid2718/bowie-ipsum.git'
+set :use_sudo, false
+
+set :deploy_to, '/var/www/bowie'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
@@ -37,11 +40,13 @@ set :repo_url, 'git@example.com:me/my_repo.git'
 namespace :deploy do
 
   after :restart, :clear_cache do
+    
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
+
     end
   end
 
