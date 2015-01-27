@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'marky_markov'
 gem 'lyricfy'
 gem 'bootstrap-sass'
+gem 'therubyracer', platforms: :ruby
 
 group :production do
   gem 'rails_12factor'
@@ -11,6 +12,10 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'capistrano'
+  gem 'capistrano-rvm'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
