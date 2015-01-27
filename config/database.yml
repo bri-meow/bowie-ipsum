@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: cave_men_gobot_production
-  username: cave_men_gobot
+  database: bowie
+  username: ubuntu
   password: <%= ENV['CAVE_MEN_GOBOT_DATABASE_PASSWORD'] %>
