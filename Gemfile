@@ -16,6 +16,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
+  gem 'capistrano-passenger'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
