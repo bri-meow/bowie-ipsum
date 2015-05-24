@@ -1,6 +1,6 @@
 class Ipsum
   def self.fill_dictionary
-    $markov = MarkyMarkov::TemporaryDictionary.new
+    $markov = MarkyMarkov::TemporaryDictionary.new(1)
     fetcher = Lyricfy::Fetcher.new
     @songs = Song.all
     @songs.each do |song|
