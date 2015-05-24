@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     if Song.all.length > 0
-      Ipsum.fill_dictionary
+      Ipsum.fill_dictionary if !$markov
       @tagline = $markov.generate_2_sentences
     end
     @song = Song.new()
