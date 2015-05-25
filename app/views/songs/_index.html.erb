@@ -7,7 +7,7 @@
   <section class="success" id="songs">
     <div class="container">
       <div class="row">
-          <% Song.all_alphabetized.each do |song| %>
+          <% @songs.each do |song| %>
           <p><%= song.title %></p>
           <% end %>
       </div>
