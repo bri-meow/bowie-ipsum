@@ -2,7 +2,7 @@ class SongsController < ApplicationController
   def create
     @song = Song.new(params.require(:song).permit(:title))
     if @song.save
-      Ipsum.fill_dictionary
+      Ipsum.add_song(@song)
       redirect_to root_path, notice: "Added #{@song.title} to BowieIpsum dictionary!"
     else
       redirect_to root_path, notice: @song.errors.full_messages.first
