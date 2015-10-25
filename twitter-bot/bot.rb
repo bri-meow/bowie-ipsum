@@ -1,5 +1,5 @@
 require 'twitter'
-require 'dotenv-rails'
+# require 'dotenv-rails'
 
 
 def tweet
